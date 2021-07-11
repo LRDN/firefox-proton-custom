@@ -1,5 +1,5 @@
 /*!
- * Firefox Proton Custom v1.0.0
+ * Firefox Proton Custom v1.0.1
  * https://github.com/lrdn/firefox-proton-custom
  *
  * Copyright (c) 2021 LRDN <git@lrdn.net>
@@ -9,18 +9,26 @@
   :root {
     --tab-min-height: 40px !important;
     --inline-tab-padding: 12px !important;
+    --titlebar-spacer-width: 42px !important;
     --toolbar-start-end-padding: 8px !important;
+    --toolbarbutton-inner-padding: 8px !important;
     --toolbarbutton-outer-padding: 3px !important;
     --bookmark-inline-margin: 2px !important;
+    --bookmark-block-padding: 4px !important;
+    --urlbar-icon-padding: 6px !important;
+    --urlbar-min-height: 32px !important;
   }
 
   :root[uidensity="compact"] {
     --tab-min-height: 36px !important;
     --inline-tab-padding: 10px !important;
+    --titlebar-spacer-width: 34px !important;
     --toolbar-start-end-padding: 6px !important;
+    --toolbarbutton-inner-padding: 6px !important;
     --toolbarbutton-outer-padding: 1px !important;
     --bookmark-inline-margin: 1px !important;
     --bookmark-block-padding: 4px !important;
+    --urlbar-icon-padding: 4px !important;
     --urlbar-min-height: 28px !important;
   }
 
@@ -47,15 +55,19 @@
     background-color: var(--lwt-accent-color) !important;
   }
 
+  #toolbar-menubar:not([inactive]) {
+    height: auto !important;
+  }
+
   #TabsToolbar {
     max-height: var(--tab-min-height) !important;
   }
 
   #TabsToolbar .titlebar-spacer {
-    width: var(--tab-min-height) !important;
+    width: var(--titlebar-spacer-width) !important;
   }
 
-  #TabsToolbar .titlebar-buttonbox {
+  #TabsToolbar .titlebar-buttonbox-container:not(:last-child) .titlebar-buttonbox {
     margin-left: calc(var(--tab-min-height) - 24px) !important;
   }
 
@@ -90,13 +102,13 @@
     margin-inline-end: -4px !important;
   }
 
-  #TabsToolbar toolbarbutton {
+  #TabsToolbar .toolbar-items toolbarbutton {
     padding: unset !important;
     margin: unset !important;
   }
 
-  #TabsToolbar toolbarbutton .toolbarbutton-icon,
-  #TabsToolbar toolbarbutton .toolbarbutton-badge-stack {
+  #TabsToolbar .toolbar-items .toolbarbutton-icon,
+  #TabsToolbar .toolbar-items .toolbarbutton-badge-stack {
     border-radius: unset !important;
   }
 
