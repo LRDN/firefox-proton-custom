@@ -1,5 +1,5 @@
 /*!
- * Firefox Proton Custom v1.0.1
+ * Firefox Proton Custom v1.0.2
  * https://github.com/lrdn/firefox-proton-custom
  *
  * Copyright (c) 2021 LRDN <git@lrdn.net>
@@ -44,7 +44,7 @@
   :root[lwtheme-mozlightdark]:not(:-moz-lwtheme-brighttext) {
     --toolbar-bgcolor: hsl(240, 10%, 96%) !important;
     --lwt-accent-color: hsl(240, 10%, 88%) !important;
-    --toolbar-field-non-lwt-bgcolor: hsl(240, 10%, 90%) !important;
+    --toolbar-field-background-color: hsl(240, 10%, 90%) !important;
     --lwt-toolbar-field-background-color: hsl(240, 10%, 90%) !important;
     --toolbarbutton-hover-background: hsla(240, 80%, 10%, 0.075) !important;
     --toolbarbutton-active-background: hsla(240, 80%, 10%, 0.125) !important;
