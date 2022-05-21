@@ -1,5 +1,5 @@
 /*!
- * Firefox Proton Custom v1.0.3
+ * Firefox Proton Custom v1.0.4
  * https://github.com/lrdn/firefox-proton-custom
  *
  * Copyright (c) 2021 LRDN <git@lrdn.net>
@@ -31,7 +31,7 @@
   --urlbar-min-height: 28px !important;
 }
 
-:root:-moz-lwtheme-brighttext:not(:-moz-lwtheme) {
+:root[lwtheme-brighttext]:not(:-moz-lwtheme) {
   --toolbar-bgcolor: hsl(240, 15%, 20%) !important;
   --lwt-accent-color: hsl(240, 15%, 12%) !important;
   --toolbar-field-background-color: hsl(240, 15%, 12%) !important;
@@ -40,7 +40,7 @@
   --chrome-content-separator-color: hsl(240, 15%, 12%) !important;
 }
 
-:root:not(:-moz-lwtheme-brighttext):not(:-moz-lwtheme) {
+:root:not([lwtheme-brighttext]):not(:-moz-lwtheme) {
   --toolbar-bgcolor: hsl(240, 15%, 96%) !important;
   --lwt-accent-color: hsl(240, 15%, 90%) !important;
   --toolbar-field-background-color: hsl(240, 15%, 90%) !important;
