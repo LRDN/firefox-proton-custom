@@ -1,5 +1,5 @@
 /*!
- * Firefox Proton Custom v1.0.4
+ * Firefox Proton Custom v1.0.5
  * https://github.com/lrdn/firefox-proton-custom
  *
  * Copyright (c) 2021 LRDN <git@lrdn.net>
@@ -57,16 +57,16 @@
   height: auto !important;
 }
 
-#TabsToolbar {
-  max-height: var(--tab-min-height) !important;
-}
-
 #TabsToolbar .titlebar-spacer {
   width: var(--titlebar-spacer-width) !important;
 }
 
 #TabsToolbar .titlebar-buttonbox-container .titlebar-color {
   margin-left: calc(var(--tab-min-height) - 24px) !important;
+}
+
+#tabbrowser-tabs {
+  min-height: var(--tab-min-height) !important;
 }
 
 #tabbrowser-tabs .tabbrowser-tab {
